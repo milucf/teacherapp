@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>College App</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--local css an js-->
+<link rel="stylesheet" href="css/style.css">
+<script src="js/app.js"></script>
+</head>
+<body>
+            <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WWTV</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="/">home</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--*******container*************-->
+    <div class="container-fluid text-center">
+
+        
+ <!--**************Filters******************-->
+
+ <div class="row filter-bar">
+    <div class="col-sm-4">
+    <div>
+     Field
+    </div>
+    <div >
+     <select id="ddField" class="form-control">
+         <option>Age</option>
+         <option>State</option>
+         <option>City</option>
+         <option>County</option>
+         <option>Zipcode</option>
+     </select>
+    </div>
+    </div>
+
+            <div class="col-sm-4">
+            <div>
+             Operator
+            </div>
+            <div >
+             <select id="ddOp" class="form-control" >
+                 <option>Equal</option>
+                 <option>Not Equal</option>
+                 <option>Greater Than</option>
+                 <option>Less Than</option>
+                 <option>Include</option>
+             </select>
+            </div>
+        </div>
+
+            <div class="col-sm-4">
+            <div>
+             Value
+            </div>
+            <div >
+           <input id="value" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg">Filter  
+                        <span class="glyphicon glyphicon-filter"></span>
+                    </button>
+            </div>
+        </div>
+    </div>
+      
+    <div class="row">
+        <div class="sm-col-12" >
+            <div style="overflow-x:auto;background-color: #ffffff;">
+            <table  class="table table-striped" >
+                    <thead>
+                            <tr>
+                              <th>Firstname</th>
+                              <th>Lastname</th>
+                              <th>DOB</th>
+                              <th>Address</th>
+                              <th>City</th>
+                              <th>County</th>
+                              <th>State</th>
+                              <th>Zipcode</th>
+                            </tr>
+                          </thead>
+                          <tbody id="gridview">
+                              <tr><td colspan="8">No Result To Show</td></tr>
+                         </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+    </div>
+<!--**************quiz list******************-->
+</body>
+</html>

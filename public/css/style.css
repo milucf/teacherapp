@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00aaaa;
+    font-size: 2em;
+
+}
+
+.filter-bar{
+    font-weight: bold;
+    color:#ffffff;
+    font-family: Verdana, serif, sans-serif;
+    padding: 50px 20px;
+}
+
+
+
+th{
+    color:#aaaaaa;
+}
